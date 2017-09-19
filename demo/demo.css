@@ -40,3 +40,7 @@ h3 {
 .map {
     height: 400px;
 }
+
+.marker-icon:focus {
+  background-color: #551a8b;
+}

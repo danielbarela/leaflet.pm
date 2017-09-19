@@ -119,7 +119,7 @@ L.PM.Edit.Line = L.PM.Edit.extend({
         marker.on('dragend', this._onMarkerDragEnd, this);
         marker.on('contextmenu', this._removeMarker, this);
         if (this.options.clickListener) {
-          marker.on('mousedown', this.options.clickListener, this);
+          marker.on('mouseup', this.options.clickListener, this);
         }
 
         this._markerGroup.addLayer(marker);

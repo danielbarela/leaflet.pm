@@ -52,7 +52,9 @@ L.PM.Edit.Marker = L.PM.Edit.extend({
         this._enabled = false;
 
         // disable dragging and removal for the marker
-        this._layer.dragging.disable();
+        if(this._layer.dragging) {
+            this._layer.dragging.disable();
+        }
         this._layer.off('contextmenu', this._removeMarker, this);
     },
     _removeMarker(e) {

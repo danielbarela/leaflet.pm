@@ -12,19 +12,19 @@ const m3 = L.marker([51.50915, -0.096112]);
 const mGroup = L.layerGroup([m1, m2, m3]).addTo(map2);
 mGroup.pm.enable();
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://osm.geointservices.io/tiles/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map2);
 
 const map3 = L.map('example3').setView([51.505, -0.09], 13);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://osm.geointservices.io/tiles/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map3);
 
 const map4 = L.map('example4').setView([51.505, -0.09], 13);
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://osm.geointservices.io/tiles/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map4);
 
